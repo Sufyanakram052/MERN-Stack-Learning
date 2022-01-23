@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+
+.Container{
+    margin: 60px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    background: #fff;
+
+    
+    display: flex;
+    
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+}
+.item1{
+    background: burlywood;
+}
+.item2{
+    background: blue;
+}
+.item3{
+    background: lightcoral;
+}
+.item4{
+    background: lightgreen;
+}
+.item5{
+    background: burlywood;
+}
+.item6{
+    background: blue;
+}
+.item7{
+    background: lightcoral;
+}
+.item8{
+    background: lightgreen;
+}
+.items{
+    padding: 10px; 
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+   
+}
+
+.justify-content{
+    margin: 60px;
+    width: 600px;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    background: #fff;
+
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.play1{
+    background: burlywood;
+}
+.play2{
+    background: blue;
+}
+.play3{
+    background: lightcoral;
+}
+.play4{
+    background: lightgreen;
+}
+.justify{
+    padding: 10px; 
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+   
+}
+
+.align-items{
+    margin: 60px;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    background: #fff;
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column; /*with the use flex direction with aligh-items its work reverse like first work vertical after that work horizontaliy */
+    justify-content: center;
+    align-items: baseline;
+}
+.yplay1{
+    background: burlywood;
+}
+.yplay2{
+    background: blue;
+    height: 100px;
+}
+.yplay3{
+    background: lightcoral;
+}
+.yplay4{
+    background: lightgreen;
+    font-size: 10px;
+}
+.justif{
+    padding: 10px; 
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.align-content{
+    margin: 60px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.sitem1{
+    background: burlywood;
+}
+.sitem2{
+    background: blue;
+}
+.sitem3{
+    background: lightcoral;
+}
+.sitem4{
+    background: lightgreen;
+}
+.sitem5{
+    background: burlywood;
+}
+.sitem6{
+    background: blue;
+}
+.sitem7{
+    background: lightcoral;
+}
+.sitem8{
+    background: lightgreen;
+}
+.item{
+    padding: 10px; 
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+   
+}
+
+.align-self{
+    margin: 60px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    background: #fff;
+  
+    
+    display: flex;
+    align-items: center;
+}
+.fyplay1{
+    background: burlywood;
+}
+.fyplay2{
+    background: blue;
+    align-self: flex-end;
+}
+.fyplay3{
+    background: lightcoral;
+}
+.fyplay4{
+    background: lightgreen;
+    align-self: stretch;
+}
+.justi{
+    padding: 10px; 
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.flex-grow{
+    margin: 60px;
+
+    border: 1px solid blueviolet;
+    background: #fff;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.msitem1{
+    background: burlywood;
+    flex-basis: 500px;
+}
+.msitem2{
+    background: blue;
+}
+.msitem3{
+    background: lightcoral;
+   /* flex-grow: 3;  for width */
+  
+}
+.msitem4{
+    background: lightgreen;
+}
+.msitem5{
+    background: burlywood;
+}
+.ite{
+    padding: 0px; 
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.flex-shrink{
+    margin: 60px;
+    border: 1px solid blueviolet;
+    background: #fff;
+    height: 100px;
+    display: flex;
+}
+
+.value1{
+    background: chartreuse;
+    /* flex-basis: 200px;
+    flex-shrink: 2; */
+    flex: 0 0 200px;
+}
+.value2{
+    background: chocolate;
+    margin-left: auto;
+}
+.value3{
+    background: crimson;
+}
+.value4{
+    background: cyan;
+
+}
+
+.shrink{
+   
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 60px;
+    width: 100px;
+}
+
+.flex-margin{
+    margin: 60px;
+    border: 1px solid blueviolet;
+    background: #fff;
+    width: 600px;
+    height:400px;
+
+    display: flex;
+}
+
+.margin1{
+    background: cyan;
+    font-size: 20px;
+    color: #fff;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.container{
+    margin: 60px;
+    border: 1px solid blueviolet;
+    background: #fff;
+    width: 600px;
+
+    display: flex;
+}
+
+.order1{
+   background: cyan;
+   order: 5;
+}
+
+.order2{
+ background: darkblue;
+ order: 3;
+}
+
+.order3{
+background: darkgoldenrod;
+order: 1;
+}
+
+.order4{
+background: darkgrey;
+order: 2;
+}
+
+.order5{ 
+    background:darkslateblue;
+    order: 4;    
+}
+
+.order{
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.nested-flex{
+    margin: 60px;
+    border: 1px solid blueviolet;
+    background: #fff;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.flex1{
+  background: darkslateblue;
+}
+.flex2{
+    background: blue;
+    display: flex;
+    height: 200px;
+}
+.subitem{
+    background: lightgreen;
+    margin: 10px;
+    flex-grow: 1;
+}
+  .flex3{
+    background: lightblue;
+}
+
+.nested{
+    padding: 10px;
+    margin: 10px;
+
+}
+    

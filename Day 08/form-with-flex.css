@@ -1,0 +1,60 @@
+#Wrapper{
+    padding: 10px;
+    margin: 50px 0;
+    background: #eee;
+}
+
+#Wrapper li{
+    display: flex;
+    padding: 5px 0;
+    justify-content: flex-end;
+}
+
+#Wrapper li label {
+   flex: 1;
+}
+
+#Wrapper li input {
+    flex: 3;
+ }
+
+ @media screen and (min-width:200px) and (max-width:499px){
+    #Wrapper li{
+        flex-direction: column;
+    }
+    #Wrapper li input {
+        flex: 4;
+     }
+ }
+
+ @media screen and (min-width:500px) {
+    #Wrapper li input {
+        flex: 3;
+     }
+ }
+
+ 
+ @media screen and (min-width:768px) {
+    #Wrapper li input {
+        flex: 4;
+     }
+ }
+
+ @media screen and (min-width:992px) {
+    #Wrapper li input {
+        flex: 5;
+     }
+ }
+
+
+
+ @media screen and (min-width:1200px) {
+    #Wrapper li input {
+        flex: 6;
+     }
+ }
+
+
+
+
+
