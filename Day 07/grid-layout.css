@@ -1,0 +1,400 @@
+.Conatainer{
+    width: 900px;
+    margin: 70px 0 0 50px;
+    background: #eee;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    /*grid-gap=20px 20px*/
+}
+
+.item1{
+     background: lightcoral;
+     /*grid-row-start: 2;
+     grid-row-end: 3;*/
+     
+     grid-row: 2 / -1;
+     
+    /* grid-column-start: 3;
+     grid-column-end: 4;*/
+
+     grid-column: 3 /4;
+}
+.item2{
+    background: lightgreen;
+}
+.item3{
+    background: lightgrey;
+}
+.item4{
+    background: lightseagreen;  
+}
+.item5{
+    background: lightskyblue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+.item6{
+    background: lightslategrey;
+}
+
+
+
+.containerr{
+    margin: 40px auto 0; 
+
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 150px 60px 100px 400px 60px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: "Headerr Headerr Headerr"
+                          "Menuu Menuu Menuu"
+                          "Box11 Box22 Sidebarr"
+                          "Contentt Contentt Sidebarr"
+                          "Footerr Footerr Footerr";
+}
+
+.Headerr{
+    background: orange;
+    grid-area: Headerr;
+}
+
+.Menuu{
+    background: orangered;
+    grid-area: Menuu;
+}
+.Box11{
+    background: orchid;
+    grid-area: Box11;
+}
+
+.Box22{
+    background: palegoldenrod;
+    grid-area: Box22;
+}
+
+.Sidebarr{
+    background: palegreen;
+    grid-area: Sidebarr;
+ 
+}
+.Contentt{
+    background: palevioletred;
+    grid-area: Contentt;
+}
+.Footerr{
+    background: pink;
+    grid-area: Footerr;
+}
+
+
+.container-MinMax{
+    margin: 40px auto 0; 
+    
+    display: grid;
+    grid-template-columns: max-content 1fr 1fr min-content ;
+    grid-template-rows: repeat(2, MinMax(150px, min-content));
+   
+    grid-gap: 15px;
+}
+
+.one{
+    background: purple;
+}
+.two{
+    background: purple;
+}
+.three{
+    background: purple;
+}
+.four{
+    background: purple;
+}
+.five{
+    background: purple;
+}
+.six{
+    background: purple;
+}
+.seven{
+    background: purple;
+}
+.eight{
+    background: purple;
+}
+
+.implicit-grid{
+    margin: 40px auto 0;
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 150px); 
+    grid-gap: 15px;
+
+    grid-auto-rows: 100px;
+    grid-auto-columns: .5fr;
+    grid-auto-flow: column;
+}
+
+.items1{
+    background: purple;
+}
+.items2{
+    background: red;
+}
+.items3{
+    background: rosybrown;
+}
+.items4{
+    background: royalblue;
+}
+.items5{
+    background: purple;
+}
+.items6{
+    background: red;
+}
+.items7{
+    background: rosybrown;
+}
+.items8{
+    background: royalblue;
+}
+
+.align-tracks{
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 800px;
+    width: 800px;
+    background: #eee;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 100px); 
+    grid-gap: 15px;
+    grid-auto-rows: 50px;
+    grid-auto-flow: row dense;
+
+    justify-content: space-around;
+    align-content: space-between;
+
+}
+.align1{
+    background: purple;
+}
+.align2{
+    background: purple;
+}
+.align3{
+    background: purple;
+    grid-row: span 3;
+}
+.align4{
+    background: purple;
+}
+.align5{
+    background: purple;
+}
+.align6{
+    background: purple;
+    grid-column: span 2;
+}
+.align7{
+    background: purple;
+    
+}
+.align8{
+    background: purple;
+}
+
+.aligning-items{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 800px;
+    background: #eee;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px); 
+    grid-gap: 15px;
+    grid-auto-rows: 70px;
+
+    align-items: center; /*for all grids */
+    justify-items: center;  /*for all grids */
+}
+
+.alig1{
+    background: purple;
+}
+.alig2{
+    background: purple;
+    align-self: end; /*for only this grid */
+}
+.alig3{
+    background: purple;
+    justify-self: end; /*for only this grid */
+    grid-row: span 3;
+}
+.alig4{
+    background: purple;
+}
+.alig5{
+    background: purple;
+}
+.alig6{
+    background: purple;
+}
+.alig7{
+    background: purple;
+    grid-column: span 2
+    
+}
+.alig8{
+    background: purple;
+}
+
+.order{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 800px;
+    background: #eee;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, MinMax(150px, min-content));
+    grid-template-rows: repeat(2, MinMax(100px, min-content)); 
+    grid-gap: 15px;
+    grid-auto-rows: 70px;
+}
+.alignn1{
+    background: purple;
+    order: 7;
+}
+.alignn2{
+    background: purple;
+    order: 8;
+}
+.alignn3{
+    background: purple;
+    order: 4;
+}
+.alignn4{
+    background: purple;
+    order: 5;
+}
+.alignn5{
+    background: purple;
+    order: 1;
+}
+.alignn6{
+    background: purple;
+    order: 2;
+}
+.alignn7{
+    background: purple;
+    order: 3;
+}
+.alignn8{
+    background: purple;
+    order: 6;
+}
+
+.fit-content{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 800px;
+    background: #eee;
+    
+    display: grid;
+    grid-template-columns: fit-content(200px) fit-content(200px) 1fr;
+    grid-template-rows: repeat(2, MinMax(100px, min-content)); 
+    grid-gap: 15px;
+    grid-auto-rows: 70px;
+}
+
+.alignnn1{
+    background: purple;
+
+}
+.alignnn2{
+    background: purple;
+
+}
+.alignnn3{
+    background: purple;
+
+}
+.alignnn4{
+    background: purple;
+
+}
+.alignnn5{
+    background: purple;
+   
+}
+.alignnn6{
+    background: purple;
+
+}
+.alignnn7{
+    background: purple;
+
+}
+.alignnn8{
+    background: purple;
+    
+}
+
+.nested-grid{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 800px;
+    background: #eee;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    grid-gap: 20px; 
+}
+
+.nested1{
+    background: purple;
+}
+
+.nested2{
+    background: purple;
+}
+
+.nested3{
+    background: purple;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.nested3 > div{
+    background: #fff;
+    color: royalblue;
+    padding: 10px;
+}
+
+.subitems1{
+    margin: 10px;
+}
+.subitems2{
+    margin: 10px;
+}
+
+.subitems3{
+    margin: 10px;
+}
+
+
+.nested4{
+    background: purple;
+}
