@@ -1,0 +1,35 @@
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+ 
+namespace positive  
+{ 
+ class positive 
+    { 
+ static void Main(string[] args) 
+   { 
+            string z; 
+            Console.Write("Enter the number: "); 
+            z = Console.ReadLine(); 
+            int a = Convert.ToInt32(z); 
+ 
+            if (a > 0) 
+            { 
+ 
+                Console.WriteLine("Entered Number is positive: "+ a); 
+            } 
+            else if (a == 0) 
+            { 
+                Console.WriteLine("Entered Number is zero " ); 
+            } 
+            else 
+            { 
+                Console.WriteLine("Entered number is negative "); 
+            } 
+ 
+            Console.ReadKey(); 
+             
+        } 
+    } 
+}

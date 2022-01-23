@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+   <script>
+       document.write(52,"<br>");
+       var student =[
+           {Name : 'Sufyan' , Age : 15 },
+           {Name : 'Sufyan' , Age : 15 },
+           {Name : 'Sufyan' , Age : 15 }
+       ];
+     console.log(student);
+     for (a=0; a<student.length; a++)
+     {
+         document.write(student[a].Name + " "+ student[a].Age + "<br>");
+     } 
+   </script>
+     <script>
+        document.write(53,"<br>");
+        //In array
+        const a=[
+             10,20,30
+        ];
+        //a=30;
+        a[0]=12;
+        a[1]=15;
+        a[2]=25;    
+        document.write(a,"<br>");
+        console.log(a);
+        // in Objects
+        const b={
+        ame : "Sufyan", 
+        Age : 15
+        };
+        b.ame="Akram";
+        document.write(b.ame + " " +b.Age + "<br>");
+        console.log(b);
+    </script>
+    <script>
+        document.write(54,"<br>");
+       var obj={
+        Name : "Sufyan", 
+        Father_Name :"Akram",
+        Age : 21,
+        email : "chsufian86f@gmail.com"
+        };
+        for(var key in obj){
+            document.write(key +" :" + obj[key] + "<br>");
+        }
+    </script>
+    <script>
+        document.write(55,"<br>");
+        var array=[1,2,3,10];
+        var bb= array.map (test);
+        document.write(bb ,"<br>");
+        function test(x){
+            return x*10;
+        }
+        var arr=[{fname : "sufyan", lanme : "Akram"},
+        {fname : "adil", lanme : "Akram"},
+        {fname : "abid", lanme : "Akram"}
+    ];
+    var bbb= arr.map(tst);
+    document.write(bbb ,"<br>");
+    function tst(xx){
+        return xx.fname + " " + xx.lanme ;
+    }
+    </script>
+    <script>
+        document.write(56,"<br>");
+        var str = "JavaScript is a Great Language is";
+        document.write(str,"<br>");
+        var aaa=str.length;
+        document.write(aaa,"<br>");
+        document.write(str.toUpperCase(),"<br>");
+        document.write(str.toLocaleLowerCase(),"<br>");
+        document.write(str.includes("Great"),"<br>");
+        document.write(str.startsWith("java"),"<br>");
+        document.write(str.endsWith("age"),"<br>");
+        document.write(str.search("is"),"<br>");
+        document.write(str.search("iS"),"<br>");
+        document.write(str.match(/a/g),"<br>");
+        document.write(str.indexOf("is"),"<br>");
+        document.write(str.lastIndexOf("is"),"<br>");
+        document.write(str.replace("is", "are"),"<br>");
+        document.write(str.replace(/is/g, "are"),"<br>");
+        var abc="        javascript     ";
+        document.write(abc.trim() + "<br>");
+        alert(abc.trim());
+        document.write(str.charAt(3 )+ "<br>");
+        document.write(str.charCodeAt(2 ), "<br>");
+        document.write(57, "<br>");
+        document.write(String.fromCharCode(65)+ "<br>");
+        document.write(str.concat(abc)+ "<br>");
+        document.write(str.split(a)+ "<br>");
+        document.write(str.repeat(5)+ "<br>");
+        document.write(str.slice(2,13)+ "<br>");
+        document.write(str.slice(-10,-1)+ "<br>");
+        document.write(str.substr(2,13)+ "<br>");
+        document.write(str.substring(2,13)+ "<br>");
+         var qq=50;
+         var bb=qq.toString();
+         document.write(typeof(bb)+ "<br>");
+         document.write(bb + qq + "<br>");
+         document.write(qq + "<br>");
+    </script>
+    <script>
+        document.write(58,"<br>");
+        var y="10.001 88";
+        document.write(Number(y) + "<br>");
+        document.write(parseInt(y) + "<br>");
+        document.write(parseFloat(y) + "<br>");
+        document.write(Number.isFinite(y) + "<br>");
+        document.write(Number.isInteger(y) + "<br>");
+        var yy=10.001;
+        var cc=yy.toFixed(3);
+        document.write(cc+ "<br>");
+        document.write(yy.toPrecision(3) + "<br>");
+
+    </script>
+     <script>
+        document.write(59,"<br>");
+        var now = new Date();
+        document.write(now ,"<br>");
+        document.write(now.toDateString(),"<br>");
+        document.write(now.getDate(),"<br>");
+        document.write(now.getFullYear(),"<br>");
+        document.write(now.getMonth(),"<br>");
+        document.write(now.getDay(),"<br>");
+        document.write(now.getHours(),"<br>");
+        document.write(now.getMilliseconds(),"<br>");
+        document.write(now.getSeconds(),"<br>");
+        document.write(now.getMinutes(),"<br>");
+        document.write(now.setDate(2),"<br>");
+        document.write(now.setFullYear(2022),"<br>");
+        document.write(now.setMonth(3),"<br>");
+        document.write(now.setDay(5),"<br>");
+        document.write(now.setHours(11),"<br>");
+        document.write(now.setMilliseconds(22),"<br>");
+        document.write(now.setSeconds(2),"<br>");
+        document.write(now.setMinutes(44),"<br>");
+    </script>
+    <script>
+        document.write(60,"<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
