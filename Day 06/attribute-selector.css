@@ -1,0 +1,16 @@
+img[alt]{
+    border: 3px solid red;
+}
+
+img[title]
+{
+    border: 3px solid green;
+}
+
+input[type]{
+    border: 2px solid green;
+}
+
+input[type="password"]{
+    border: 2px solid yellow;
+}
