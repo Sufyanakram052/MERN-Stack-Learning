@@ -1,0 +1,36 @@
+body{
+    background: #ffff;
+}
+#text{
+    background: orange;
+    width: 600px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+#adjacent-position{
+    background: orange;
+    width: 600px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+button{
+    background: green;
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+input{
+    height: 40px;
+}
+
+select{
+    height: 40px;
+    width: 60px;
+}
