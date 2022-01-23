@@ -1,0 +1,28 @@
+p:target{
+    background: brown;
+}
+
+input[type="text"]:focus{
+    border: 5px solid red;
+}
+
+input[type="checkbox"]:checked + label{
+   box-shadow: 0 0 0 5px Green;
+   
+}
+
+input[type="radio"]:checked + label{
+   color: red;
+ }
+
+ input:required{
+    background: wheat;
+
+ }
+
+
+ input[type="email"]:invalid{
+    background: wheat;
+ }
+ 
+ 

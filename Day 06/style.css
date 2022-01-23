@@ -1,0 +1,78 @@
+body{
+    background: #eee;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    border: 0px solid black;
+    background: #fff;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    left: 50%;
+    top: 30%;
+    margin: -150px;
+    position: absolute;
+    line-height: 300px;
+    box-shadow: 0 0 15px lightcoral;
+    /*
+    animation-name: sample;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.1, 0.4,1,2);
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    short hand in below 
+    */
+    animation: sample 2s cubic-bezier(0.1, 0.4,1,2) 2s infinite alternate;
+}
+
+@keyframes sample{
+    0%{ border-radius: 0%;}
+   /* 50%{
+        border-radius: 17%;
+        background-color: black; 
+        color: white;
+    }
+    75%{
+        border-radius: 34%;
+        background-color: green; 
+        color: white;
+    }
+    */
+    100%{ border-radius: 50%;
+        background-color: green; 
+        color: white;
+       }
+}
+
+.fill-mode{
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    padding-left: 50px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin: -150px;
+    border-radius: 28px;
+
+    animation-name: key;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+.fill-mode:hover{
+    animation-play-state: paused;
+}
+
+@keyframes key{
+    0%{background: blue; width: 150px;}
+    50%{background: yellowgreen; width: 200px;}
+    75%{background: lightgreen; width: 250px;}
+    100%{background: rgb(65, 82, 87); width: 300px;}
+}

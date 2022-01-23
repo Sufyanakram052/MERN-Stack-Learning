@@ -1,0 +1,15 @@
+p::first-letter{
+    font-size: 30px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p::first-line{
+    color: greenyellow;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li::selection{
+    background: green;
+}
+
