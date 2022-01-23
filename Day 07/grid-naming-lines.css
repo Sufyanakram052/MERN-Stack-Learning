@@ -1,0 +1,42 @@
+.containerr{
+    margin: 40px auto 0; 
+
+    display: grid;
+    grid-template-columns: repeat(3,[col-star] 1fr [col-end]) ;
+    grid-template-rows: [header-start] 150px [header-end menu-start] 60px [menu-end box-start] 100px [box-end content-start] 400px [content-end footer-start] 60px [footer-end];
+    grid-gap: 15px;
+    
+}
+.Header{
+    background: orange;
+    grid-row: header-start / header-end;
+    grid-column: col-start 1 / col-end 3; 
+}
+.Menu{
+    background: orangered;
+    grid-row: menu-start / menu-end;
+    grid-column: col-start 1 / col-end 3; 
+}
+.Box1{
+    background: orchid;
+}
+
+.Box2{
+    background: palegoldenrod;
+    
+}
+
+.Sidebar{
+    background: palegreen;
+    grid-row: box-start / content-end;
+ 
+}
+.Content{
+    background: palevioletred;
+    grid-row: content-start / content-end;
+    grid-column: col-start 1 / col-end 3; 
+}
+.Footer{
+    background: pink;
+    grid-row: footer-start / footer-end;
+}
