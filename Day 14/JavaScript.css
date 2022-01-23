@@ -1,0 +1,37 @@
+.outer{
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.inner{
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    margin: 100px auto 0;
+
+}
+
+#sufian{
+    background-color: green;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#akram{
+    background-color: yellow;
+    width: 600px;
+    height: 150px;
+    margin: 100px auto 0;
+
+}
+
+#akram div{
+    height: 60px;
+    width: 60px;
+    background-color: tomato;
+    display: inline-block;
+    margin: auto 20px;
+}
