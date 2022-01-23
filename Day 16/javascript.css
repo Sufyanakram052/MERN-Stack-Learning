@@ -1,0 +1,15 @@
+#setintervel{
+
+    margin: 2%;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+#settimeout{
+    margin: 2%;
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+}
