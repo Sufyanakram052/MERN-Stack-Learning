@@ -1,0 +1,42 @@
+.container-fluid{
+   border: 1px solid green;
+  background: #eee;
+}
+
+header{
+    height: 100px;
+    background-color: indianred;
+}
+
+#menu{
+    margin-top: 20px;
+    height: 60px;
+    background-color: lawngreen;
+}
+
+#content{
+    margin-top: 20px;
+}
+
+.headings{
+    background-color: lightblue;
+    width: 70% !important;
+    height: 700px;
+
+}
+
+.sidebar{
+    background-color: lightcoral;
+    width: 30% !important;
+    height: 700px;
+}
+.container{
+    margin-top: 20px;
+    
+}
+
+img{
+    height: 60px;
+    width: 60px;
+    align-self: flex-end;
+}

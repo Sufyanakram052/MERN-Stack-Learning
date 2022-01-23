@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: burlywood;
+    margin: 0px;
+    padding: 0;
+}
+.wraper{
+    background: white;
+}
+header{
+    font-size: 50px;
+    background-color:coral;
+    min-height: 100px;
+    padding-top: 50PX;
+    
+}
+
+.Menu{
+    background-color:darksalmon;
+    min-height: 50px;
+}
+.Menu a{
+    text-decoration: none;
+    font-size: 25px;
+    padding-top: 10px;
+    color: black;
+    padding: 10px 10px;
+}
+
+.sub-heading{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.sub-heading h1{
+    font-size: 50px;
+    padding-left: 25px;
+}
+
+.sub-heading p{
+    padding-left: 25px;
+    text-align: justify;
+    text-align-last: auto;
+}
+
+.Sidebar{
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.footer{
+    background-color: darksalmon;
+    min-height: 50px;
+    text-align: right;
+    font-size: 25px;
+}
