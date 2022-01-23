@@ -1,0 +1,73 @@
+h2{
+    text-decoration: solid;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 10px;
+    text-underline-offset: 20px;
+    color: green;
+}
+
+.one{
+    color: greenyellow !important;
+}
+#one{
+    color: grey;
+}
+.marker{
+    margin-top: 40px;
+}
+ ul li::marker{
+    color: red;
+}
+
+.marker ul{
+    list-style-type: '⇉ ';
+    list-style-position: inside;
+}
+
+
+header{
+    background: #eee;
+    display: flex;
+    justify-content: center;
+}
+header ul{
+    display: flex;
+    
+}
+header ul li{ 
+    list-style: none;
+}
+
+header ul li a{ 
+    text-decoration: none;
+    margin: 10px;
+    font-size: 30px;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+h1{
+    text-align: center;
+}
+
+.Home{
+    scroll-snap-align: start;
+}
+
+#top{
+    border: 1px solid green;
+    background: green;
+    width: 30px;
+    height: 20px;
+  
+
+    opacity: 80%;
+    float: right;
+    position: fixed;
+}
+
+
