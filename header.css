@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    height: 150px;
+    background-color: #75797b;
+    display: flex;
+    align-items: center;
+}
+.image img{
+    height: 100px;
+    padding-top: 25px;
+    padding-left: 70px;
+}
+
+.list{
+    margin: 0 0 0 auto;
+}
+
+.list ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.list ul li{
+    margin: 20px;  
+}
+
+.list ul li input{
+    padding: 10px;
+    box-shadow: none;
+}
+
+@media screen and (max-width : 437px) {
+    #header{
+        flex-direction: column;
+        height: 200px;
+    }
+    .image img{
+        height: 120px;
+        padding-left: 0px;
+    }
+    .list{
+        margin: 0 auto;
+    }
+
+    .list ul li{
+        padding-top: 10px;
+        margin: 10px;  
+    }
+    .list ul li input{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width : 217px) {
+    #header{
+        height: 250px;
+    }
+    .image img{
+        height: 100px;
+        padding-left: 0px;
+    }
+    .list{
+
+        margin: 0;
+    }
+
+    .list ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .list ul li{
+        padding-top: 5px;
+        margin: 10px;  
+    }
+    .list ul li input{
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width : 68px) {
+    #header{
+        height: 250px;
+    }
+    .image img{
+        height: 80px;
+        padding-left: 0px;
+    }
+    .list{
+        margin: 0;
+    }
+
+    .list ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .list ul li{
+        padding-top: 5px;
+        margin: 10px;  
+    }
+    .list ul li input{
+        padding: 0px;
+    }
+}
