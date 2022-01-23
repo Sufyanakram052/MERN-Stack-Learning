@@ -1,0 +1,9 @@
+.position{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: relative;
+    left: -50px;
+    top: 0px;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Basic Layout</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body{
+    font-family: 'Times New Roman', Times, serif;
+    background: burlywood;
+    margin: 0px;
+    padding: 0;
+}
+.wraper{
+    width: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+header{
+    font-size: 50px;
+    background-color:coral;
+    min-height: 100px;
+    padding-top: 50PX;
+    padding-left: 25px;
+}
+
+.Menu{
+    background-color:darksalmon;
+    min-height: 50px;
+    margin: 0px;
+}
+.Menu a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    padding-top: 10px;
+    color: black;
+    padding: 10px 10px;
+}
+
+.sub-heading{
+    min-width: 200px;
+    max-width: 750px;
+    float: left;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.sub-heading h1{
+    font-size: 50px;
+    padding-left: 25px;
+}
+
+.sub-heading p{
+    padding-left: 25px;
+    text-align: justify;
+    text-align-last: auto;
+}
+
+.Sidebar{
+    background-color: lightblue;
+    min-width: 200px;
+    min-height: 400px;
+    float: right;
+    padding: 10px;
+    margin:auto;
+    box-sizing: border-box;
+}
+
+.footer{
+    background-color: darksalmon;
+    min-height: 50px;
+    text-align: right;
+    margin-right: 25px;
+    clear: both;
+    font-size: 25px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 1020px) {
+
+    .wraper{
+    width: 800px;
+   }
+}
+
+@media screen and (max-width: 720px) {
+
+    .wraper{
+    width: 500px;
+   }
+   .sub-heading{
+       height: 100%;
+       width: 100%;
+   }
+   .Sidebar{
+    height: 100%;
+    width: 100%;
+   }
+}
+
+@media screen and (max-width: 480px) {
+
+    .wraper{
+    width: 480px;
+   }
+   .sub-heading{
+       height: 100%;
+       width: 100%;
+   }
+   .Sidebar{
+    height: 100%;
+    width: 100%;
+   }
+}
+    </style>
+    
+</head>
+<body>
+    <!---Language Changer-->
+    
+
+    <div class="wraper">
+    <!----This is header-->
+    <header>
+        Website Name
+        <div class="language">
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                }
+                </script>
+                
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+    </header>
+
+    <!---Menu-->
+    <div class="Menu">
+        <ul class="Menu">
+            <a href="">Home</a>
+            <a href="">Gallery</a>
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+        </ul>
+    </div>
+
+    <!----Sub Heading-->
+    <div class="sub-heading">
+        <h1>Sub Heading</h1>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <!----Side Bar-->
+    <div class="Sidebar">
+        <ul>
+            <li>Home</li>
+            <li>Gallery</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+    <!---Footer-->
+    <div class="footer">
+         <p>Chsufian86f@ghmail.com.</p>
+    </div>
+</div>
+</body>
+</html>
