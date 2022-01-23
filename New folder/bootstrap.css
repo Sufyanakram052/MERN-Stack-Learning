@@ -1,0 +1,10 @@
+form{
+    margin-left: 50%;
+}
+li.nav-item:hover{
+    color: white;
+}
+form>i{
+    margin-top: 5%;
+    margin-right: 10%;
+}
