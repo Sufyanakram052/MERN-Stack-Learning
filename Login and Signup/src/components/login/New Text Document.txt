@@ -1,0 +1,52 @@
+import React from "react"
+import "./login.css"
+import {Grid,Paper, Avatar, TextField,Button,Typography, Link} from "@material-ui/core"
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Checkbox from '@material-ui/core/Checkbox'
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+
+const Login = () =>{
+
+    //const Duty = {height:'100%', background: 'linear-gradient(90deg, #DCDDD8 50%, #EBECE7 50%)' }
+    
+    return(
+        <div>
+            <Grid>
+                <Paper elevation = {10} className = "PaperStyle" >
+                    <Grid align = 'center'>
+                      <Avatar className="avatarStyle" >
+                          <LockOutlinedIcon/>
+                          </Avatar>
+                      <h2>Login</h2>
+                    </Grid>
+                    <Grid>
+                       <TextField id="outlined-basic" label="Username" variant="outlined" fullWidth required/>
+                       <br/><br/>
+                       <TextField id="outlined-basic" label="Password" type='password' variant="outlined" fullWidth required/>
+                      <FormGroup>
+                         <FormControlLabel control={<Checkbox defaultChecked />} label="Remember Me" />
+                      </FormGroup>
+                      <Button className = "ButtonStyle" variant="contained" size = "large" color = "primary" fullWidth>
+                          SignIn 
+                          <ArrowRightAltIcon/>
+                        </Button>
+                        <Typography>
+                            <Link href='#'> 
+                            Forget Password?
+                            </Link>
+                        </Typography>
+                        <Typography> <span>Do you have an account </span>
+                            <Link href='#'> 
+                               Signup
+                            </Link>
+                        </Typography>
+                    </Grid>
+                </Paper>
+            </Grid>
+        </div>
+    )
+}
+
+export default Login
