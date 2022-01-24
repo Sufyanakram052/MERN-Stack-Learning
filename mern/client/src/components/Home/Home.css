@@ -1,0 +1,37 @@
+#container{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+#container img{
+    transition: all 2s ease-in-out 0.2s;
+}
+
+#container img:hover{
+    width: 500px;
+    height: 300px;
+}
+
+#container2{
+    padding-left: 40px;
+}
+
+#container2 p{
+    font-size: 16px;
+}
+
+#container2 ul{
+    font-size: 14px;
+}
+
+@media screen and (max-width : 992px) {
+    #container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #container2{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+}

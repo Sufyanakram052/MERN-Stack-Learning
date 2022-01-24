@@ -1,0 +1,11 @@
+.crops{
+    display: flex;
+    flex-direction: column;
+}
+.sidebardiv{
+    width: 100%;
+}
+.maincontent{
+    width: 60%;
+}
+

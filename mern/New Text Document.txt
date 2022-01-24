@@ -1,0 +1,7 @@
+1- Open Visual Studio Code
+2- Select Project Folder by ctrl+k+ctrl+O
+3- Open Terminal and Split Terminal
+4- Run command (cd server) in 1st terminal and (cd client) in 2nd terminal
+5- Run command (npm/yarn install) in both terminals
+6- On 2nd terminal run command (npm start) 
+ 

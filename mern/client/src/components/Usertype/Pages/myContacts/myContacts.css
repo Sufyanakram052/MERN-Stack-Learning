@@ -1,0 +1,4 @@
+.farmer {
+   display: flex;
+   flex-direction: column;
+}

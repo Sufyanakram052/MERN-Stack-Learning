@@ -1,0 +1,61 @@
+.createposCard{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.createposCard h2{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.createposCard input{
+    max-width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.createposCard textarea{
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.createposCard button{
+    max-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.form-control12{
+    color: white;
+    background-color: #25D366;
+    border: none;
+}
+
+.form-control12:hover{
+    color: white;
+    background-color: #25D366;
+    border: none;
+}
+
+@media screen and (max-width:536px) {
+    .createposCard input{
+        max-width: 200px;
+    }
+    .createposCard textarea{
+        max-width: 90%;
+    }
+    .createposCard button{
+        max-width: 200px;
+    }
+}

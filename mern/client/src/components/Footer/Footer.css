@@ -1,0 +1,170 @@
+#footer {
+  height: auto;
+  width: auto;
+  background-color: #075E54;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.kissan-dost {
+  color: beige;
+  padding: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kissan-dost h1{
+  font-size: xx-large;
+}
+
+address{
+  font-size: 16px;
+}
+
+.useful-links {
+  color: beige;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style-position: inside;
+}
+.useful-links h1{
+  font-size: xx-large;
+}
+
+.useful-links ul{
+  font-size: 16px;
+  list-style: circle;
+}
+
+.our-services {
+  list-style: circle;
+  color: beige;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style-position: inside;
+}
+.our-services h1{
+  font-size: xx-large;
+}
+.our-services ul{
+  font-size: 16px;
+  list-style: circle;
+}
+.conten{
+  font-size: 16px;
+}
+.user-farmer-login {
+  color: beige;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.user-farmer-login h1{
+  font-size: xx-large;
+}
+.user-farmer-login input {
+  padding: 10px;
+  border: 0px;
+  border-radius: 40px;
+  width: 200px;
+  background-color: white;
+  color: #25D366;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#linkss {
+  height: 60px;
+  padding: 10px;
+  background-color: rgb(141, 130, 130);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list ul {
+  display: flex;
+}
+.list ul li {
+  list-style: none;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 960px) {
+  .kissan-dost {
+    width: 33%;
+  }
+  .our-services {
+    width: 33%;
+  }
+  .our-services {
+    width: 34%;
+  }
+  .user-farmer-login {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #footer {
+    justify-content: start;
+  }
+  .kissan-dost {
+    width: 50%;
+  }
+  .our-services {
+    width: 50%;
+  }
+  .our-services {
+    width: 50%;
+  }
+  .user-farmer-login {
+    width: 50%;
+  }
+
+  .user-farmer-login input {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .kissan-dost {
+    width: 100%;
+    clear: both;
+  }
+  .our-services {
+    width: 100%;
+    clear: both;
+  }
+  .our-services {
+    width: 100%;
+    clear: both;
+  }
+  .user-farmer-login {
+    width: 100%;
+    clear: both;
+  }
+
+  .user-farmer-login input {
+    width: auto;
+    padding: auto;
+  }
+
+  #linkss {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1487px) {
+  .content {
+    margin: 0 auto;
+  }
+}

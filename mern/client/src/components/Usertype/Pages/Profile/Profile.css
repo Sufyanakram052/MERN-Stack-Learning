@@ -1,0 +1,67 @@
+
+.profiledata{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.profiledata h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+.profileinfo{
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profilelabelinput label {
+    font-size: 18px;
+}
+
+.profilelabelinput label span {
+    color: red;
+}
+
+.profilelabelinput input{
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.profilebutton input{
+    width: 300px;
+    background-color: #25D366;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+}
+
+@media screen and (max-width : 786px) {
+    .profilesidebar{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width : 786px) {
+    .profile{
+        flex-direction: column-reverse;
+    }
+    .profilesidebar{
+        width: 90%;
+        top: 0;bottom: 0;right: 0;left: 0;margin: auto;
+        margin-top: 10px;
+    }
+    .profiledata{
+        top: 0;bottom: 0;right: 0;left: 0;margin: auto;
+        width: 90%;
+    }
+
+}

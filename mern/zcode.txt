@@ -1,0 +1,161 @@
+const jwt = require("jsonwebtoken");
+const express = require("express");
+const router = express.Router();
+const bcrypt = require("bcryptjs");
+require("../db/conn");
+const User = require("../models/userSchema");
+const dotenv = require('dotenv');
+dotenv.config({path : '../config.env'})
+const cookieParser = require("cookie-parser");
+router.use(cookieParser());
+
+router.get("/", (req, res) => {
+  res.send("Hello World from the server Route");
+});
+
+
+
+// By Using Async And Await
+
+router.post("/register", async (req, res) => {
+  const { name, email, phone, work, provinance, city, password, cpassword } =
+    req.body;
+
+  if (
+    !name ||
+    !email ||
+    !phone ||
+    !work ||
+    !provinance ||
+    !city ||
+    !password ||
+    !cpassword
+  ) {
+    return res.status(422).json({ error: "Please Filled the field Properly" });
+  }
+
+  try {
+    const userExist = await User.findOne({ email: email });
+
+    if (userExist) {
+      return res.status(422).json({ error: "Email already Exist" });
+    } else if (password != cpassword) {
+      return res.status(422).json({ error: "password are not matching" });
+    } else {
+      const user = new User({
+        name,
+        email,
+        phone,
+        work,
+        provinance,
+        city,
+        password,
+        cpassword,
+      });
+
+      await user.save();
+
+      res.status(201).json({ message: "User registered Successfully" });
+    }
+  } catch (err) {
+    console.log(err);
+  }
+  
+});
+
+router.get("/register", (req, res) => {
+  res.send("REGISTER");
+});
+
+// Login Router
+
+router.post("/signin", async (req, res) => {
+    
+  try {
+    let token;
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+      return res.status(400).json({ error: "Please Fill the data properly " });
+    }
+
+    const userLogin = await User.findOne({ email: email });
+    console.log(userLogin);
+
+    if (userLogin) {
+      console.log(userLogin.password);
+      const isMatch = await bcrypt.compare(password, userLogin.password);
+     console.log(isMatch);
+
+      if (isMatch) {
+        // Need to generate the token and stored cookie after the password match
+        token = await userLogin.generateAuthToken();
+        console.log(token);
+  
+        //FOR COOKIES IN BROSWER
+        res.cookie("jwtoken", token, {
+          expires: new Date(Date.now() + 25892000000),
+          httpOnly: true,
+        });
+
+        res.json({ message: "user Signin Successfully" });
+      } else {
+        res.status(400).json({ message: "Invalid Credential pass" });
+        
+      }
+    } else {
+      res.status(400).json({ message: "Invalid Credential q" });
+    }
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+const authenticate = async (req, res, next) => {
+    
+  try{
+      
+      const token = req.cookies['jwtoken'];
+  if(!token){
+      return res.sendStatus('nothing find');
+    }
+      
+      const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
+      console.log(verifyToken);
+      
+
+      const rootUser = await User.findOne({ _id: verifyToken._id, "tokens.token": token });
+
+      console.log(rootUser);
+
+      if(!rootUser){ throw new Error('User Not Found') }
+
+      req.token = token;
+      req.rootUser = rootUser;
+      req.userID = rootUser._id;
+
+      next();
+
+  } catch (err){
+      res.status(401).send("Unauthorized: No token provided ")
+      console.log(err)
+  }
+}
+
+
+// get user data for contact us page
+
+router.get('/getdata', authenticate , (req,res) => {
+  console.log("Hello my contact us page");
+  res.send(req.rootUser);
+})
+
+
+
+router.get("/logout", (req, res) => {
+  console.log("Hello my Logout Page");
+  res.clearCookie('jwtoken',  {path : '/'} );
+  res.status(200).send('User Logout');
+});
+
+module.exports = router;
